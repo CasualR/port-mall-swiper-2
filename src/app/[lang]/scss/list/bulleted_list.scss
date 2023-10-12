@@ -1,0 +1,35 @@
+.bulleted__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.bulleted__item {
+    color: $dark;
+    font-family: $font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+
+    background: url(/images/description_point.svg) no-repeat;
+
+    padding-left: 28px;
+}
+
+@media (min-width: 768px) {
+    .description__list {
+        gap: 10px;
+    }
+}
+
+@media (min-width: 920px) {
+    .description__list {
+        gap: 10px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .description__list {
+        gap: 10px;
+    }
+}
