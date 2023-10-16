@@ -31,7 +31,7 @@ const ImageSwiper = (info) => {
                 }}
                 navigation={true}
                 modules={[Pagination, Navigation]}
-                className="mySwiper"
+                className="imageSwiper"
                 speed={1000}
 
                 breakpoints={{

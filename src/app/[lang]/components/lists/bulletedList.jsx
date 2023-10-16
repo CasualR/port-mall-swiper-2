@@ -1,5 +1,6 @@
 import React from 'react';
 import { getDictionary } from '../../../../../getDictionary';
+import styles from '../../scss/list/bulleted_list.module.scss';
 
 const BulletedList = async (props) => {
     const lang = await getDictionary(props.passedValue.lang);
@@ -10,10 +11,10 @@ const BulletedList = async (props) => {
 
     return (
         <>
-            <ul className='bulleted__list'>
+            <ul className={styles.bulleted__list}>
                 {bullets.map((text, index) => (
                     <li key={index}>
-                        <div className="bulleted__item">{text}</div>
+                        <div className={styles.bulleted__item}>{text}</div>
                     </li>
                 ))}
             </ul>
